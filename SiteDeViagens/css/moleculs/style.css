@@ -1,6 +1,7 @@
 @import url(../atoms/header.css);
 @import url(../atoms/forms.css);
 @import url(../atoms/slide_cards.css);
+@import url(../atoms/carousel.css);
 
 /* fonts 
 ------------------------*/
@@ -12,6 +13,6 @@ body, html {
 --------------------- */
 :root {
     --one: #000000;
-    --two: #21963a;
+    --two: #0fad31;
     --three: #ffffff;
 }

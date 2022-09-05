@@ -24,12 +24,12 @@ DROP TABLE IF EXISTS `pacotesviagens`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `pacotesviagens` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `destino` varchar(50) DEFAULT NULL,
-  `hospedagem` varchar(50) DEFAULT NULL,
-  `diarias` varchar(20) DEFAULT NULL,
-  `preco` decimal(10,2) DEFAULT NULL,
+  `destino` varchar(50) NOT NULL,
+  `hospedagem` varchar(50) NOT NULL,
+  `diarias` varchar(20) NOT NULL,
+  `preco` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `pacotesviagens` (
 
 LOCK TABLES `pacotesviagens` WRITE;
 /*!40000 ALTER TABLE `pacotesviagens` DISABLE KEYS */;
-INSERT INTO `pacotesviagens` VALUES (3,'Rio de Janeiro','Pousada Beira Mar','04 Diárias',2300.00),(4,'Salvador','Pousada Rosa','03 Diárias',1300.00),(10,'São Paulo','Beira Mar','03 diárias',1200.00),(12,'Rio de Janeiro','Hotel Jequitibar','04 Diárias',2500.00),(13,'Pernambuco','Resout Alabama','02 Diárias',3600.00),(14,'Salvador','Vila Mar','04 Diárias',2600.00);
+INSERT INTO `pacotesviagens` VALUES (1,'Salvador','Hotel Marina','03 Diárias',2300.00),(2,'Recife','Hotel Costa Mar','02 Diárias',2300.00);
 /*!40000 ALTER TABLE `pacotesviagens` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-03 21:36:06
+-- Dump completed on 2022-09-05 15:18:31

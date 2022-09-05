@@ -1,10 +1,10 @@
-/* Físico_SiteViagens: */
+/* FÃ­sico_SiteViagens: */
 
 CREATE DATABASE agenciaViagens;
 
 USE agenciaViagens;
 
-CREATE TABLE pacoteViagens (
+CREATE TABLE pacotesViagens (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     destino VARCHAR(50) NOT NULL,
     hospedagem VARCHAR(50) NOT NULL,
@@ -17,11 +17,11 @@ CREATE TABLE promocao (
 	nomePromocao VARCHAR(50) NOT NULL,
     tipoPromocao VARCHAR(50) NOT NULL,
     desconto DECIMAL(3,2) NOT NULL,
-    fk_pacoteViagens_id INT
+    fk_pacotesViagens_id INT NOT NULL
 );
  
 ALTER TABLE promocao ADD CONSTRAINT FK_promocao_pacote
-    FOREIGN KEY (fk_pacoteViagens_id)
-    REFERENCES pacoteViagens (id)
+    FOREIGN KEY (fk_pacotesViagens_id)
+    REFERENCES pacotesViagens (id)
     ON UPDATE CASCADE
     ON DELETE CASCADE;
